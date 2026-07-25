@@ -1,6 +1,8 @@
 name: probe-sources
 on:
   workflow_dispatch:
+  push:
+    branches: [claude/mexico-womens-ics-feed-upbuqo]
 
 jobs:
   probe:
