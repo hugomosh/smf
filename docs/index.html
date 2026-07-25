@@ -3,18 +3,204 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>🇲🇽 Calendario Selección Mexicana Femenil</title>
+<title>🇲🇽 Calendario de la Selección Mexicana Femenil</title>
+<meta name="description" content="Calendario suscribible con los partidos de la Selección Mexicana Femenil mayor. Se actualiza solo, con marcadores.">
+<meta property="og:title" content="🇲🇽 Calendario de la Selección Mexicana Femenil">
+<meta property="og:description" content="Suscríbete y todos los partidos aparecen solos en tu calendario, con marcador final.">
+<meta property="og:type" content="website">
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; }
-  code { background: #f0f0f0; padding: .2em .4em; border-radius: 4px; word-break: break-all; }
-  @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } code { background: #222; } }
+  :root {
+    --bg: #ffffff;
+    --fg: #14171a;
+    --muted: #5b6570;
+    --line: #e3e6e9;
+    --accent: #006341;
+    --card: #f7f8f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --fg: #e8eaed; --muted: #9aa3ad;
+      --line: #262b33; --accent: #3ecf8e; --card: #171a20;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #ffffff; --fg: #14171a; --muted: #5b6570;
+    --line: #e3e6e9; --accent: #006341; --card: #f7f8f9;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --fg: #e8eaed; --muted: #9aa3ad;
+    --line: #262b33; --accent: #3ecf8e; --card: #171a20;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.15rem 4rem;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--fg);
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; letter-spacing: -.01em; }
+  h3 { font-size: .95rem; margin: 1.5rem 0 .4rem; }
+  p { margin: 0 0 1rem; }
+  .lede { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.75rem; }
+  ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: .35rem; }
+  .url-box {
+    display: flex; gap: .5rem; align-items: stretch;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: .6rem .7rem; margin-bottom: .6rem;
+  }
+  .url-box code {
+    flex: 1; font-size: .82rem; word-break: break-all;
+    align-self: center; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  button.copy {
+    flex: none; border: 0; border-radius: 7px; cursor: pointer;
+    background: var(--accent); color: #fff; font-weight: 600;
+    font-size: .8rem; padding: .5rem .85rem; font-family: inherit;
+  }
+  button.copy:active { opacity: .8; }
+  .note { color: var(--muted); font-size: .88rem; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+  .en { color: var(--muted); }
+  .en h2, .en h3 { color: var(--fg); }
 </style>
 </head>
 <body>
-<h1>🇲🇽 Selección Mexicana Femenil</h1>
-<p>Calendario de partidos de la selección mayor femenil, actualizado cada hora con marcadores.</p>
-<p>Suscríbete en Apple/Google Calendar con esta URL:</p>
-<p><code>https://hugomosh.github.io/smf/smf.ics</code></p>
-<p><a href="smf.ics">Descargar .ics</a> · <a href="https://github.com/hugomosh/smf">GitHub</a></p>
+<main>
+
+<h1>🇲🇽 Calendario de la Selección Mexicana Femenil</h1>
+<p class="lede">
+  Suscríbete una vez y todos los partidos de la selección <strong>mayor femenil</strong>
+  aparecen solos en tu calendario: fecha, rival, competencia y estadio. Cuando termina
+  el partido, el marcador se agrega al título del evento.
+</p>
+
+<div class="url-box">
+  <code id="feed">https://hugomosh.github.io/smf/smf.ics</code>
+  <button class="copy" id="copy" type="button">Copiar</button>
+</div>
+<p class="note">Copia esa liga y sigue los pasos de tu app 👇</p>
+
+<h2>Instrucciones</h2>
+
+<h3>iPhone / iPad</h3>
+<ol>
+  <li>Abre <strong>Ajustes</strong> → <strong>Apps</strong> → <strong>Calendario</strong>
+      → <strong>Cuentas</strong>.</li>
+  <li>Toca <strong>Añadir cuenta</strong> → <strong>Otra</strong> →
+      <strong>Añadir calendario suscrito</strong>.</li>
+  <li>Pega la liga de arriba y toca <strong>Siguiente</strong> →
+      <strong>Guardar</strong>.</li>
+</ol>
+
+<h3>Mac</h3>
+<ol>
+  <li>Abre la app <strong>Calendario</strong>.</li>
+  <li>Menú <strong>Archivo</strong> → <strong>Nueva suscripción a calendario</strong>.</li>
+  <li>Pega la liga y elige <strong>Actualizar: cada hora</strong>.</li>
+</ol>
+
+<h3>Google Calendar (Android / web)</h3>
+<ol>
+  <li>Entra a <a href="https://calendar.google.com">calendar.google.com</a>
+      desde una computadora (no se puede desde la app del celular).</li>
+  <li>En la barra izquierda, junto a <strong>Otros calendarios</strong>, haz clic en
+      <strong>+</strong> → <strong>Desde URL</strong>.</li>
+  <li>Pega la liga y haz clic en <strong>Añadir calendario</strong>.</li>
+</ol>
+<p class="note">
+  Ojo: Google decide por su cuenta cada cuándo revisa los calendarios externos
+  (suele tardar entre 8 y 24 horas), así que ahí los marcadores llegan tarde.
+  Las fechas de los partidos sí se ven bien. En iPhone/Mac la actualización es
+  cada hora.
+</p>
+
+<h3>Outlook</h3>
+<ol>
+  <li>En Outlook web: <strong>Calendario</strong> →
+      <strong>Agregar calendario</strong> → <strong>Suscribirse desde la web</strong>.</li>
+  <li>Pega la liga y ponle nombre.</li>
+</ol>
+
+<h2>Preguntas rápidas</h2>
+<p>
+  <strong>¿Qué partidos incluye?</strong> Solo los de la selección mayor femenil:
+  amistosos, eliminatorias y torneos de Concacaf. No incluye Sub-17, Sub-20, Sub-23
+  ni la rama varonil.
+</p>
+<p>
+  <strong>¿Y si todavía no hay hora confirmada?</strong> Concacaf a veces anuncia
+  primero la fecha y después el horario. Mientras tanto el partido aparece como
+  evento de todo el día y se convierte solo en evento con hora cuando se confirma.
+</p>
+<p>
+  <strong>¿Los horarios son de México?</strong> El calendario se publica en UTC y tu
+  teléfono lo convierte solo a tu zona horaria, estés en México o en Estados Unidos.
+</p>
+<p>
+  <strong>¿Tengo que hacer algo para actualizarlo?</strong> No. Se actualiza cada hora
+  automáticamente.
+</p>
+
+<hr>
+
+<div class="en">
+<h2>In English</h2>
+<p>
+  A subscribable calendar for the Mexico <strong>senior women's</strong> national team.
+  Subscribe once and every match shows up automatically — date, opponent, competition
+  and venue — with the final score added to the event title once the match ends.
+</p>
+<h3>iPhone / iPad</h3>
+<ol>
+  <li>Settings → Apps → Calendar → Accounts.</li>
+  <li>Add Account → Other → Add Subscribed Calendar.</li>
+  <li>Paste the URL above → Next → Save.</li>
+</ol>
+<h3>Mac</h3>
+<ol>
+  <li>Calendar app → File → New Calendar Subscription.</li>
+  <li>Paste the URL, set auto-refresh to every hour.</li>
+</ol>
+<h3>Google Calendar</h3>
+<ol>
+  <li>On a computer, go to calendar.google.com.</li>
+  <li>Next to "Other calendars", click <strong>+</strong> → <strong>From URL</strong>.</li>
+  <li>Paste the URL → Add calendar.</li>
+</ol>
+<p class="note">
+  Google refreshes external calendars on its own schedule (8–24 h), so scores land
+  late there; fixtures are accurate. Apple refreshes hourly. Kickoffs that Concacaf
+  hasn't timed yet appear as all-day events and become timed events automatically.
+</p>
+</div>
+
+<footer>
+  <a href="smf.ics">Descargar .ics</a> ·
+  <a href="https://github.com/hugomosh/smf">Código en GitHub</a><br>
+  Datos: ESPN · Hecho por <a href="https://github.com/hugomosh">@hugomosh</a> ·
+  Proyecto no oficial, sin relación con la FMF.
+</footer>
+
+</main>
+<script>
+  document.getElementById('copy').addEventListener('click', async function () {
+    var url = document.getElementById('feed').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(url);
+      this.textContent = '¡Copiado!';
+    } catch (e) {
+      var r = document.createRange();
+      r.selectNode(document.getElementById('feed'));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(r);
+      this.textContent = 'Selecciona y copia';
+    }
+    setTimeout(function () { document.getElementById('copy').textContent = 'Copiar'; }, 2000);
+  });
+</script>
 </body>
 </html>

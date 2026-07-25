@@ -1,8 +1,33 @@
 # smf — Calendario de la Selección Mexicana Femenil 🇲🇽
 
 Subscribable calendar for the Mexico women's senior national team.
+Página con instrucciones: **https://hugomosh.github.io/smf/**
 
-## Subscribe
+## Suscríbete (español)
+
+```
+https://hugomosh.github.io/smf/smf.ics
+```
+
+Copia esa liga y pégala en tu app de calendario:
+
+- **iPhone / iPad**: Ajustes → Apps → Calendario → Cuentas → Añadir cuenta →
+  Otra → **Añadir calendario suscrito** → pega la liga → Siguiente → Guardar.
+- **Mac**: app Calendario → Archivo → **Nueva suscripción a calendario** →
+  pega la liga → Actualizar: cada hora.
+- **Google Calendar**: desde una computadora en calendar.google.com, junto a
+  "Otros calendarios" haz clic en **+** → **Desde URL** → pega la liga.
+  (No se puede desde la app del celular.)
+- **Outlook web**: Calendario → Agregar calendario → **Suscribirse desde la web**.
+
+Incluye solo partidos de la **selección mayor femenil** — no Sub-17, Sub-20,
+Sub-23 ni la rama varonil. Los partidos sin horario confirmado aparecen como
+evento de todo el día y se convierten solos en evento con hora. Los horarios se
+publican en UTC y tu teléfono los convierte a tu zona. En iPhone/Mac se
+actualiza cada hora; Google revisa los calendarios externos cuando quiere
+(8–24 h), así que ahí los marcadores llegan tarde.
+
+## Subscribe (English)
 
 ```
 https://hugomosh.github.io/smf/smf.ics
@@ -82,8 +107,8 @@ Python 3 stdlib only, nothing to install.
 
 ## Repo settings (one-time)
 
-- [ ] **Pages** → Source: Deploy from a branch → `main` / `docs` folder —
-  required, the feed is served by GitHub Pages.
+- [x] **Pages** → Source: Deploy from a branch → `main` / `docs` folder —
+  the feed is served by GitHub Pages.
 - [x] **Actions → General → Workflow permissions**: "Read and write" — the
   workflow also declares `permissions: contents: write`, which is scoped per
   workflow and works even if the repo default stays read-only.
