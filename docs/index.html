@@ -10,12 +10,8 @@
 <meta property="og:type" content="website">
 <style>
   :root {
-    --bg: #ffffff;
-    --fg: #14171a;
-    --muted: #5b6570;
-    --line: #e3e6e9;
-    --accent: #006341;
-    --card: #f7f8f9;
+    --bg: #ffffff; --fg: #14171a; --muted: #5b6570;
+    --line: #e3e6e9; --accent: #006341; --card: #f7f8f9;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -33,26 +29,40 @@
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0; padding: 2.5rem 1.15rem 4rem;
+    margin: 0; padding: 2rem 1.15rem 4rem;
     font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     background: var(--bg); color: var(--fg);
   }
   main { max-width: 36rem; margin: 0 auto; }
   h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
-  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .75rem; letter-spacing: -.01em; }
   h3 { font-size: .95rem; margin: 1.5rem 0 .4rem; }
   p { margin: 0 0 1rem; }
-  .lede { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.75rem; }
-  ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+  .lede { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.5rem; }
+  ol { padding-left: 1.25rem; margin: 0 0 .75rem; }
   li { margin-bottom: .35rem; }
+
+  /* language toggle */
+  .langbar { display: flex; justify-content: flex-end; margin-bottom: 1.25rem; }
+  .langbar div {
+    display: inline-flex; border: 1px solid var(--line);
+    border-radius: 999px; overflow: hidden;
+  }
+  .langbar button {
+    border: 0; background: transparent; color: var(--muted); cursor: pointer;
+    font: inherit; font-size: .8rem; font-weight: 600; letter-spacing: .03em;
+    padding: .35rem .85rem;
+  }
+  .langbar button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
   .url-box {
     display: flex; gap: .5rem; align-items: stretch;
     background: var(--card); border: 1px solid var(--line);
     border-radius: 10px; padding: .6rem .7rem; margin-bottom: .6rem;
   }
   .url-box code {
-    flex: 1; font-size: .82rem; word-break: break-all;
-    align-self: center; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    flex: 1; font-size: .82rem; word-break: break-all; align-self: center;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   }
   button.copy {
     flex: none; border: 0; border-radius: 7px; cursor: pointer;
@@ -61,146 +71,246 @@
   }
   button.copy:active { opacity: .8; }
   .note { color: var(--muted); font-size: .88rem; }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   a { color: var(--accent); }
-  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
-  .en { color: var(--muted); }
-  .en h2, .en h3 { color: var(--fg); }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .85rem; }
+
+  /* One language at a time; Spanish is the no-JS default. Scoped to main so the
+     rule can never match <html lang="en"> and blank the whole page. */
+  main [lang="en"] { display: none; }
+  body.lang-en main [lang="en"] { display: block; }
+  body.lang-en main [lang="es"] { display: none; }
 </style>
 </head>
 <body>
 <main>
 
-<h1>🇲🇽 Calendario de la Selección Mexicana Femenil</h1>
-<p class="lede">
-  Suscríbete una vez y todos los partidos de la selección <strong>mayor femenil</strong>
-  aparecen solos en tu calendario: fecha, rival, competencia y estadio. Cuando termina
-  el partido, el marcador se agrega al título del evento.
-</p>
+<div class="langbar">
+  <div role="group" aria-label="Idioma / Language">
+    <button type="button" id="btn-es" aria-pressed="true">ES</button>
+    <button type="button" id="btn-en" aria-pressed="false">EN</button>
+  </div>
+</div>
+
+<section lang="es">
+  <h1>🇲🇽 Calendario de la Selección Mexicana Femenil</h1>
+  <p class="lede">
+    Suscríbete una vez y todos los partidos de la selección <strong>mayor femenil</strong>
+    aparecen solos en tu calendario: fecha, rival, competencia y estadio. Cuando termina
+    el partido, el marcador se agrega al título del evento.
+  </p>
+</section>
+
+<section lang="en">
+  <h1>🇲🇽 Mexico Women's National Team Calendar</h1>
+  <p class="lede">
+    Subscribe once and every match of the <strong>senior women's</strong> national team
+    shows up in your calendar automatically: date, opponent, competition and venue. Once
+    a match ends, the final score is added to the event title.
+  </p>
+</section>
 
 <div class="url-box">
   <code id="feed">https://hugomosh.github.io/smf/smf.ics</code>
-  <button class="copy" id="copy" type="button">Copiar</button>
+  <button class="copy" id="copy" type="button" data-copy-es="Copiar" data-copy-en="Copy">Copiar</button>
 </div>
-<p class="note">Copia esa liga y sigue los pasos de tu app 👇</p>
+<p class="note" lang="es">Copia esa liga y sigue los pasos de tu app 👇</p>
+<p class="note" lang="en">Copy that URL, then follow the steps for your app 👇</p>
 
-<h2>Instrucciones</h2>
+<section lang="es">
+  <h2>Instrucciones</h2>
 
-<h3>iPhone / iPad</h3>
-<ol>
-  <li>Abre <strong>Ajustes</strong> → <strong>Apps</strong> → <strong>Calendario</strong>
-      → <strong>Cuentas</strong>.</li>
-  <li>Toca <strong>Añadir cuenta</strong> → <strong>Otra</strong> →
-      <strong>Añadir calendario suscrito</strong>.</li>
-  <li>Pega la liga de arriba y toca <strong>Siguiente</strong> →
-      <strong>Guardar</strong>.</li>
-</ol>
+  <h3>Apple Calendar — iPhone / iPad</h3>
+  <ol>
+    <li>Abre <strong>Ajustes</strong> → <strong>Apps</strong> → <strong>Calendario</strong>
+        → <strong>Cuentas</strong>. (En iOS 17 o anterior: <strong>Ajustes</strong> →
+        <strong>Calendario</strong> → <strong>Cuentas</strong>.)</li>
+    <li>Toca <strong>Añadir cuenta</strong> → <strong>Otra</strong> →
+        <strong>Añadir calendario suscrito</strong>.</li>
+    <li>Pega la liga y toca <strong>Siguiente</strong> → <strong>Guardar</strong>.</li>
+  </ol>
+  <p class="note">
+    Apple respeta la señal de actualización cada hora que trae el calendario, así que
+    los marcadores aparecen en el título del evento poco después del silbatazo final.
+  </p>
 
-<h3>Mac</h3>
-<ol>
-  <li>Abre la app <strong>Calendario</strong>.</li>
-  <li>Menú <strong>Archivo</strong> → <strong>Nueva suscripción a calendario</strong>.</li>
-  <li>Pega la liga y elige <strong>Actualizar: cada hora</strong>.</li>
-</ol>
+  <h3>Apple Calendar — Mac</h3>
+  <ol>
+    <li>Abre la app <strong>Calendario</strong>.</li>
+    <li>Menú <strong>Archivo</strong> → <strong>Nueva suscripción a calendario</strong>.</li>
+    <li>Pega la liga y elige <strong>Actualizar: cada hora</strong>.</li>
+  </ol>
 
-<h3>Google Calendar (Android / web)</h3>
-<ol>
-  <li>Entra a <a href="https://calendar.google.com">calendar.google.com</a>
-      desde una computadora (no se puede desde la app del celular).</li>
-  <li>En la barra izquierda, junto a <strong>Otros calendarios</strong>, haz clic en
-      <strong>+</strong> → <strong>Desde URL</strong>.</li>
-  <li>Pega la liga y haz clic en <strong>Añadir calendario</strong>.</li>
-</ol>
-<p class="note">
-  Ojo: Google decide por su cuenta cada cuándo revisa los calendarios externos
-  (suele tardar entre 8 y 24 horas), así que ahí los marcadores llegan tarde.
-  Las fechas de los partidos sí se ven bien. En iPhone/Mac la actualización es
-  cada hora.
-</p>
+  <h3>Google Calendar — Android / web</h3>
+  <ol>
+    <li>Entra a <a href="https://calendar.google.com">calendar.google.com</a> desde una
+        computadora. (No se puede desde la app del celular: Google solo deja añadir
+        calendarios por URL desde la web.)</li>
+    <li>En la barra izquierda, junto a <strong>Otros calendarios</strong>, haz clic en
+        <strong>+</strong> → <strong>Desde URL</strong>.</li>
+    <li>Pega la liga y haz clic en <strong>Añadir calendario</strong>. Una vez añadido,
+        también se ve en la app del celular.</li>
+  </ol>
+  <p class="note">
+    Google revisa los calendarios externos cuando quiere —normalmente entre 8 y 24
+    horas— y no hay forma de apurarlo. Las fechas y los rivales se ven bien; lo que
+    llega tarde son los marcadores. Si quieres el marcador el mismo día, usa Apple.
+  </p>
 
-<h3>Outlook</h3>
-<ol>
-  <li>En Outlook web: <strong>Calendario</strong> →
-      <strong>Agregar calendario</strong> → <strong>Suscribirse desde la web</strong>.</li>
-  <li>Pega la liga y ponle nombre.</li>
-</ol>
+  <h3>Outlook</h3>
+  <ol>
+    <li>En Outlook web: <strong>Calendario</strong> → <strong>Agregar calendario</strong>
+        → <strong>Suscribirse desde la web</strong>.</li>
+    <li>Pega la liga, ponle nombre y guarda.</li>
+  </ol>
 
-<h2>Preguntas rápidas</h2>
-<p>
-  <strong>¿Qué partidos incluye?</strong> Solo los de la selección mayor femenil:
-  amistosos, eliminatorias y torneos de Concacaf. No incluye Sub-17, Sub-20, Sub-23
-  ni la rama varonil.
-</p>
-<p>
-  <strong>¿Y si todavía no hay hora confirmada?</strong> Concacaf a veces anuncia
-  primero la fecha y después el horario. Mientras tanto el partido aparece como
-  evento de todo el día y se convierte solo en evento con hora cuando se confirma.
-</p>
-<p>
-  <strong>¿Los horarios son de México?</strong> El calendario se publica en UTC y tu
-  teléfono lo convierte solo a tu zona horaria, estés en México o en Estados Unidos.
-</p>
-<p>
-  <strong>¿Tengo que hacer algo para actualizarlo?</strong> No. Se actualiza cada hora
-  automáticamente.
-</p>
+  <h2>Preguntas rápidas</h2>
+  <p>
+    <strong>¿Qué partidos incluye?</strong> Solo los de la selección mayor femenil:
+    amistosos, eliminatorias y torneos de Concacaf. No incluye Sub-17, Sub-20, Sub-23
+    ni la rama varonil.
+  </p>
+  <p>
+    <strong>¿Y si todavía no hay hora confirmada?</strong> Concacaf a veces anuncia
+    primero la fecha y después el horario. Mientras tanto el partido aparece como evento
+    de todo el día y se convierte solo en evento con hora cuando se confirma, sin que
+    tengas que volver a suscribirte.
+  </p>
+  <p>
+    <strong>¿Los horarios son de México?</strong> El calendario se publica en UTC y tu
+    teléfono lo convierte solo a tu zona horaria, estés en México o en Estados Unidos.
+  </p>
+  <p>
+    <strong>¿Tengo que hacer algo para actualizarlo?</strong> No. Se actualiza cada hora
+    automáticamente.
+  </p>
+</section>
 
-<hr>
+<section lang="en">
+  <h2>Instructions</h2>
 
-<div class="en">
-<h2>In English</h2>
-<p>
-  A subscribable calendar for the Mexico <strong>senior women's</strong> national team.
-  Subscribe once and every match shows up automatically — date, opponent, competition
-  and venue — with the final score added to the event title once the match ends.
-</p>
-<h3>iPhone / iPad</h3>
-<ol>
-  <li>Settings → Apps → Calendar → Accounts.</li>
-  <li>Add Account → Other → Add Subscribed Calendar.</li>
-  <li>Paste the URL above → Next → Save.</li>
-</ol>
-<h3>Mac</h3>
-<ol>
-  <li>Calendar app → File → New Calendar Subscription.</li>
-  <li>Paste the URL, set auto-refresh to every hour.</li>
-</ol>
-<h3>Google Calendar</h3>
-<ol>
-  <li>On a computer, go to calendar.google.com.</li>
-  <li>Next to "Other calendars", click <strong>+</strong> → <strong>From URL</strong>.</li>
-  <li>Paste the URL → Add calendar.</li>
-</ol>
-<p class="note">
-  Google refreshes external calendars on its own schedule (8–24 h), so scores land
-  late there; fixtures are accurate. Apple refreshes hourly. Kickoffs that Concacaf
-  hasn't timed yet appear as all-day events and become timed events automatically.
-</p>
-</div>
+  <h3>Apple Calendar — iPhone / iPad</h3>
+  <ol>
+    <li>Open <strong>Settings</strong> → <strong>Apps</strong> → <strong>Calendar</strong>
+        → <strong>Accounts</strong>. (On iOS 17 and earlier: <strong>Settings</strong> →
+        <strong>Calendar</strong> → <strong>Accounts</strong>.)</li>
+    <li>Tap <strong>Add Account</strong> → <strong>Other</strong> →
+        <strong>Add Subscribed Calendar</strong>.</li>
+    <li>Paste the URL, tap <strong>Next</strong> → <strong>Save</strong>.</li>
+  </ol>
+  <p class="note">
+    Apple honors the calendar's 1-hour refresh hint, so scores land in the event title
+    shortly after full time.
+  </p>
+
+  <h3>Apple Calendar — Mac</h3>
+  <ol>
+    <li>Open the <strong>Calendar</strong> app.</li>
+    <li><strong>File</strong> → <strong>New Calendar Subscription</strong>.</li>
+    <li>Paste the URL and set <strong>Auto-refresh: Every hour</strong>.</li>
+  </ol>
+
+  <h3>Google Calendar — Android / web</h3>
+  <ol>
+    <li>Go to <a href="https://calendar.google.com">calendar.google.com</a> on a
+        computer. (It can't be done from the phone app — Google only allows adding
+        calendars by URL on the web.)</li>
+    <li>In the left sidebar, next to <strong>Other calendars</strong>, click
+        <strong>+</strong> → <strong>From URL</strong>.</li>
+    <li>Paste the URL and click <strong>Add calendar</strong>. Once added, it also shows
+        up in the phone app.</li>
+  </ol>
+  <p class="note">
+    Google refreshes external calendars on its own schedule — usually 8–24 hours — and
+    there's no way to hurry it. Fixtures themselves are fine; it's the scores that show
+    up late. If you want same-day scores, use Apple.
+  </p>
+
+  <h3>Outlook</h3>
+  <ol>
+    <li>In Outlook on the web: <strong>Calendar</strong> →
+        <strong>Add calendar</strong> → <strong>Subscribe from web</strong>.</li>
+    <li>Paste the URL, name it, and save.</li>
+  </ol>
+
+  <h2>Quick questions</h2>
+  <p>
+    <strong>Which matches are included?</strong> Senior women's national team only:
+    friendlies, qualifiers and Concacaf tournaments. No U-17, U-20, U-23 or men's team.
+  </p>
+  <p>
+    <strong>What if kickoff time isn't confirmed yet?</strong> Concacaf often announces
+    the date before the time. Until it's confirmed the match shows as an all-day event,
+    then turns into a timed event on its own — no need to re-subscribe.
+  </p>
+  <p>
+    <strong>What time zone?</strong> The calendar publishes in UTC and your phone
+    converts it to your local time, whether you're in Mexico or the US.
+  </p>
+  <p>
+    <strong>Do I need to do anything to keep it updated?</strong> No. It refreshes
+    hourly, automatically.
+  </p>
+</section>
 
 <footer>
-  <a href="smf.ics">Descargar .ics</a> ·
-  <a href="https://github.com/hugomosh/smf">Código en GitHub</a><br>
-  Datos: ESPN · Hecho por <a href="https://github.com/hugomosh">@hugomosh</a> ·
-  Proyecto no oficial, sin relación con la FMF.
+  <span lang="es">
+    <a href="smf.ics">Descargar .ics</a> ·
+    <a href="https://github.com/hugomosh/smf">Código en GitHub</a><br>
+    Datos: ESPN · Hecho por <a href="https://github.com/hugomosh">@hugomosh</a> ·
+    Proyecto no oficial, sin relación con la FMF.
+  </span>
+  <span lang="en">
+    <a href="smf.ics">Download .ics</a> ·
+    <a href="https://github.com/hugomosh/smf">Source on GitHub</a><br>
+    Data: ESPN · Built by <a href="https://github.com/hugomosh">@hugomosh</a> ·
+    Unofficial project, not affiliated with the FMF.
+  </span>
 </footer>
 
 </main>
 <script>
-  document.getElementById('copy').addEventListener('click', async function () {
-    var url = document.getElementById('feed').textContent.trim();
-    try {
-      await navigator.clipboard.writeText(url);
-      this.textContent = '¡Copiado!';
-    } catch (e) {
-      var r = document.createRange();
-      r.selectNode(document.getElementById('feed'));
-      window.getSelection().removeAllRanges();
-      window.getSelection().addRange(r);
-      this.textContent = 'Selecciona y copia';
+  (function () {
+    var body = document.body;
+    var btnEs = document.getElementById('btn-es');
+    var btnEn = document.getElementById('btn-en');
+    var copyBtn = document.getElementById('copy');
+
+    function setLang(lang, remember) {
+      var en = lang === 'en';
+      body.classList.toggle('lang-en', en);
+      document.documentElement.lang = lang;
+      btnEs.setAttribute('aria-pressed', String(!en));
+      btnEn.setAttribute('aria-pressed', String(en));
+      copyBtn.textContent = copyBtn.getAttribute(en ? 'data-copy-en' : 'data-copy-es');
+      if (remember) { try { localStorage.setItem('smf-lang', lang); } catch (e) {} }
     }
-    setTimeout(function () { document.getElementById('copy').textContent = 'Copiar'; }, 2000);
-  });
+
+    var saved = null;
+    try { saved = localStorage.getItem('smf-lang'); } catch (e) {}
+    setLang(saved || ((navigator.language || 'es').slice(0, 2) === 'en' ? 'en' : 'es'), false);
+
+    btnEs.addEventListener('click', function () { setLang('es', true); });
+    btnEn.addEventListener('click', function () { setLang('en', true); });
+
+    copyBtn.addEventListener('click', async function () {
+      var url = document.getElementById('feed').textContent.trim();
+      var isEn = body.classList.contains('lang-en');
+      try {
+        await navigator.clipboard.writeText(url);
+        this.textContent = isEn ? 'Copied!' : '¡Copiado!';
+      } catch (e) {
+        var r = document.createRange();
+        r.selectNode(document.getElementById('feed'));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        this.textContent = isEn ? 'Select & copy' : 'Copia esto';
+      }
+      setTimeout(function () {
+        copyBtn.textContent = copyBtn.getAttribute(isEn ? 'data-copy-en' : 'data-copy-es');
+      }, 2000);
+    });
+  })();
 </script>
 </body>
 </html>
