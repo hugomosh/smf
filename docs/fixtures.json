@@ -1,0 +1,707 @@
+{
+ "team_id": "2812",
+ "matches": [
+  {
+   "id": "espn-693475",
+   "source": "espn",
+   "date_utc": "2024-03-07T00:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2752",
+    "name": "Brazil",
+    "score": "3"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "0"
+   },
+   "competition": "Concacaf W Gold Cup",
+   "round": "Semifinals",
+   "venue": "Snapdragon Stadium",
+   "venue_city": "San Diego, California, USA",
+   "broadcast": "ESPN Deportes, ESPN+, Paramount+",
+   "seq": 0,
+   "fingerprint": "9253d37737692a2e",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-699070",
+   "source": "espn",
+   "date_utc": "2024-04-06T22:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "11337",
+    "name": "Colombia",
+    "score": "1"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "797185ac3978e4c6",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-699067",
+   "source": "espn",
+   "date_utc": "2024-04-10T00:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "0"
+   },
+   "away": {
+    "id": "2751",
+    "name": "Australia",
+    "score": "2"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "e18f9ce1f88e9153",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-702164",
+   "source": "espn",
+   "date_utc": "2024-06-01T18:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2753",
+    "name": "Canada",
+    "score": "2"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "f6a903bb92898b83",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-702165",
+   "source": "espn",
+   "date_utc": "2024-06-04T23:30Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2753",
+    "name": "Canada",
+    "score": "1"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "c9b437394a0de754",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-701213",
+   "source": "espn",
+   "date_utc": "2024-07-13T19:30Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2765",
+    "name": "United States",
+    "score": "1"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": "Sports Illustrated Stadium",
+   "venue_city": "Harrison, New Jersey, USA",
+   "broadcast": "TNT, HBO Max, Tele",
+   "seq": 0,
+   "fingerprint": "2a25595863a3e14c",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-722223",
+   "source": "espn",
+   "date_utc": "2024-10-26T21:45Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "3"
+   },
+   "away": {
+    "id": "20914",
+    "name": "Venezuela",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": "Estadio Agustín Coruco Díaz",
+   "venue_city": "Hidalgo, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "9016983e8a4ba83e",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-722571",
+   "source": "espn",
+   "date_utc": "2024-10-30T01:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "4"
+   },
+   "away": {
+    "id": "17642",
+    "name": "Thailand",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": "Estadio Nemesio Díez Riega",
+   "venue_city": "Toluca, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "10816a73b1905e45",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-723485",
+   "source": "espn",
+   "date_utc": "2024-12-01T01:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "4"
+   },
+   "away": {
+    "id": "2894",
+    "name": "Costa Rica",
+    "score": "1"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": "Estadio Andrés Quintana Roo",
+   "venue_city": "Cancún, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "8f798642e681a237",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-723486",
+   "source": "espn",
+   "date_utc": "2024-12-04T02:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "away": {
+    "id": "2895",
+    "name": "Panama",
+    "score": "1"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2024 Women's International Friendly",
+   "venue": "Estadio Carlos Iturralde Rivero",
+   "venue_city": "Mérida, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "52a0c3d971612118",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-732103",
+   "source": "espn",
+   "date_utc": "2025-02-19T12:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "4"
+   },
+   "away": {
+    "id": "7268",
+    "name": "Chinese Taipei",
+    "score": "0"
+   },
+   "competition": "Pinatar Cup",
+   "round": "2025 Pinatar Cup",
+   "venue": "Pinatar Arena",
+   "venue_city": "Murcia, Spain",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "29b1ca90c4ac4467",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-732106",
+   "source": "espn",
+   "date_utc": "2025-02-22T18:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2753",
+    "name": "Canada",
+    "score": "2"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "0"
+   },
+   "competition": "Pinatar Cup",
+   "round": "2025 Pinatar Cup",
+   "venue": "Pinatar Arena",
+   "venue_city": "Murcia, Spain",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "6d9170552133c412",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-732107",
+   "source": "espn",
+   "date_utc": "2025-02-25T12:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2754",
+    "name": "China",
+    "score": "0"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "2"
+   },
+   "competition": "Pinatar Cup",
+   "round": "2025 Pinatar Cup",
+   "venue": "Pinatar Arena",
+   "venue_city": "Murcia, Spain",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "7013eb4f3c824940",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-733029",
+   "source": "espn",
+   "date_utc": "2025-04-05T21:30Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "3"
+   },
+   "away": {
+    "id": "2893",
+    "name": "Jamaica",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "CPKC Stadium",
+   "venue_city": "Kansas City, Missouri, USA",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "7bb065d4418528d1",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-733030",
+   "source": "espn",
+   "date_utc": "2025-04-09T00:30Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "4"
+   },
+   "away": {
+    "id": "2893",
+    "name": "Jamaica",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "Shell Energy Stadium",
+   "venue_city": "Houston, Texas, USA",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "e96aa5e333568b53",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-735697",
+   "source": "espn",
+   "date_utc": "2025-05-31T01:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "2"
+   },
+   "away": {
+    "id": "19960",
+    "name": "Uruguay",
+    "score": "2"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "be23d41c93cca90e",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-735694",
+   "source": "espn",
+   "date_utc": "2025-06-04T01:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "away": {
+    "id": "19960",
+    "name": "Uruguay",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "Estadio Tlahuicole",
+   "venue_city": "Tlaxcala, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "5c16aaacccd1e53a",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-739962",
+   "source": "espn",
+   "date_utc": "2025-06-28T02:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "0"
+   },
+   "away": {
+    "id": "11337",
+    "name": "Colombia",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "Estadio Olímpico Benito Juárez",
+   "venue_city": "Ciudad Juárez, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "e54a26cea11d6b4a",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-739961",
+   "source": "espn",
+   "date_utc": "2025-07-02T23:45Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "away": {
+    "id": "11337",
+    "name": "Colombia",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "Estadio Agustín Coruco Díaz",
+   "venue_city": "Hidalgo, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "30477fa8b3da12ff",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-759083",
+   "source": "espn",
+   "date_utc": "2025-10-24T02:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "away": {
+    "id": "4153",
+    "name": "New Zealand",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "Estadio Ciudad de los Deportes",
+   "venue_city": "Mexico City, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "5d5d1a89e2ae362e",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-759084",
+   "source": "espn",
+   "date_utc": "2025-10-26T23:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "2"
+   },
+   "away": {
+    "id": "4153",
+    "name": "New Zealand",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "Estadio Olímpico Benito Juárez",
+   "venue_city": "Ciudad Juárez, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "fad276d59b2ff440",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-761413",
+   "source": "espn",
+   "date_utc": "2025-12-03T00:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2894",
+    "name": "Costa Rica",
+    "score": "0"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "2"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2025 Women's International Friendly",
+   "venue": "Complejo Deportivo FEDEFUTBOL Plycem",
+   "venue_city": "Alajuela, Costa Rica",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "6a6356027432b8a0",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-401859484",
+   "source": "espn",
+   "date_utc": "2026-03-07T23:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "away": {
+    "id": "2752",
+    "name": "Brazil",
+    "score": "0"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2026 Women's International Friendly",
+   "venue": "Estadio Ciudad de los Deportes",
+   "venue_city": "Mexico City, Mexico",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "804b0cea03189558",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-401871167",
+   "source": "espn",
+   "date_utc": "2026-06-06T09:15Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2751",
+    "name": "Australia",
+    "score": "0"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2026 Women's International Friendly",
+   "venue": "McDonald Jones Stadium",
+   "venue_city": "Newcastle, New South Wales, Australia",
+   "broadcast": "ESPN+",
+   "seq": 0,
+   "fingerprint": "1280e34d2d0c9d31",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-401871168",
+   "source": "espn",
+   "date_utc": "2026-06-09T09:00Z",
+   "time_valid": true,
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
+   "home": {
+    "id": "2751",
+    "name": "Australia",
+    "score": "3"
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": "1"
+   },
+   "competition": "Women's International Friendly",
+   "round": "2026 Women's International Friendly",
+   "venue": "CommBank Stadium",
+   "venue_city": "Sydney, Australia",
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "759a0a2b21cddfec",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  },
+  {
+   "id": "espn-401870042",
+   "source": "espn",
+   "date_utc": "2026-11-28T20:00Z",
+   "time_valid": false,
+   "state": "pre",
+   "status": "STATUS_SCHEDULED",
+   "status_detail": "TBD",
+   "home": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": null
+   },
+   "away": {
+    "id": "2891",
+    "name": "Haiti",
+    "score": null
+   },
+   "competition": "Concacaf W Championship",
+   "round": "Quarterfinals",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "071dadfc9cf63200",
+   "last_modified_utc": "2026-07-25T02:54:37Z"
+  }
+ ]
+}
