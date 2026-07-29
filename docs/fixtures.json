@@ -696,12 +696,12 @@
    },
    "competition": "Concacaf W Championship",
    "round": "Quarterfinals",
-   "venue": null,
-   "venue_city": null,
+   "venue": "Texas Health Mansfield Stadium",
+   "venue_city": "Mansfield, USA",
    "broadcast": null,
-   "seq": 0,
-   "fingerprint": "071dadfc9cf63200",
-   "last_modified_utc": "2026-07-25T02:54:37Z"
+   "seq": 1,
+   "fingerprint": "1f2081acd2dec0ef",
+   "last_modified_utc": "2026-07-29T00:14:24Z"
   }
  ]
 }
