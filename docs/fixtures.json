@@ -677,6 +677,60 @@
    "last_modified_utc": "2026-07-25T02:54:37Z"
   },
   {
+   "id": "espn-401916246",
+   "source": "espn",
+   "date_utc": "2026-10-09T18:00Z",
+   "time_valid": false,
+   "state": "pre",
+   "status": "STATUS_SCHEDULED",
+   "status_detail": "TBD",
+   "home": {
+    "id": "2893",
+    "name": "Jamaica",
+    "score": null
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": null
+   },
+   "competition": "Women's International Friendly",
+   "round": "2026 Women's International Friendly",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "60707125ba49e29a",
+   "last_modified_utc": "2026-09-01T10:18:38Z"
+  },
+  {
+   "id": "espn-401916245",
+   "source": "espn",
+   "date_utc": "2026-10-13T18:00Z",
+   "time_valid": false,
+   "state": "pre",
+   "status": "STATUS_SCHEDULED",
+   "status_detail": "TBD",
+   "home": {
+    "id": "2893",
+    "name": "Jamaica",
+    "score": null
+   },
+   "away": {
+    "id": "2812",
+    "name": "Mexico",
+    "score": null
+   },
+   "competition": "Women's International Friendly",
+   "round": "2026 Women's International Friendly",
+   "venue": null,
+   "venue_city": null,
+   "broadcast": null,
+   "seq": 0,
+   "fingerprint": "5bde91428ce10644",
+   "last_modified_utc": "2026-09-01T10:18:38Z"
+  },
+  {
    "id": "espn-401870042",
    "source": "espn",
    "date_utc": "2026-11-28T20:00Z",
