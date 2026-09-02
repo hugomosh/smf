@@ -685,13 +685,13 @@
    "status": "STATUS_SCHEDULED",
    "status_detail": "TBD",
    "home": {
-    "id": "2893",
-    "name": "Jamaica",
+    "id": "2812",
+    "name": "Mexico",
     "score": null
    },
    "away": {
-    "id": "2812",
-    "name": "Mexico",
+    "id": "2893",
+    "name": "Jamaica",
     "score": null
    },
    "competition": "Women's International Friendly",
@@ -699,9 +699,9 @@
    "venue": null,
    "venue_city": null,
    "broadcast": null,
-   "seq": 0,
-   "fingerprint": "60707125ba49e29a",
-   "last_modified_utc": "2026-09-01T10:18:38Z"
+   "seq": 1,
+   "fingerprint": "09f9e78d5dee3c3a",
+   "last_modified_utc": "2026-09-02T09:44:09Z"
   },
   {
    "id": "espn-401916245",
@@ -712,13 +712,13 @@
    "status": "STATUS_SCHEDULED",
    "status_detail": "TBD",
    "home": {
-    "id": "2893",
-    "name": "Jamaica",
+    "id": "2812",
+    "name": "Mexico",
     "score": null
    },
    "away": {
-    "id": "2812",
-    "name": "Mexico",
+    "id": "2893",
+    "name": "Jamaica",
     "score": null
    },
    "competition": "Women's International Friendly",
@@ -726,9 +726,9 @@
    "venue": null,
    "venue_city": null,
    "broadcast": null,
-   "seq": 0,
-   "fingerprint": "5bde91428ce10644",
-   "last_modified_utc": "2026-09-01T10:18:38Z"
+   "seq": 1,
+   "fingerprint": "e84d28f707915606",
+   "last_modified_utc": "2026-09-02T09:44:09Z"
   },
   {
    "id": "espn-401870042",
