@@ -733,11 +733,11 @@
   {
    "id": "espn-401870042",
    "source": "espn",
-   "date_utc": "2026-11-28T20:00Z",
-   "time_valid": false,
+   "date_utc": "2026-11-28T21:30Z",
+   "time_valid": true,
    "state": "pre",
    "status": "STATUS_SCHEDULED",
-   "status_detail": "TBD",
+   "status_detail": "11/28 - 4:30 PM EST",
    "home": {
     "id": "2812",
     "name": "Mexico",
@@ -753,9 +753,9 @@
    "venue": "Texas Health Mansfield Stadium",
    "venue_city": "Mansfield, USA",
    "broadcast": null,
-   "seq": 1,
-   "fingerprint": "1f2081acd2dec0ef",
-   "last_modified_utc": "2026-07-29T00:14:24Z"
+   "seq": 2,
+   "fingerprint": "6e967d60b5aa414f",
+   "last_modified_utc": "2026-09-08T18:49:56Z"
   }
  ]
 }
