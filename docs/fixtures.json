@@ -679,11 +679,11 @@
   {
    "id": "espn-401916246",
    "source": "espn",
-   "date_utc": "2026-10-09T18:00Z",
-   "time_valid": false,
+   "date_utc": "2026-10-10T01:00Z",
+   "time_valid": true,
    "state": "pre",
    "status": "STATUS_SCHEDULED",
-   "status_detail": "TBD",
+   "status_detail": "10/9 - 9:00 PM EDT",
    "home": {
     "id": "2812",
     "name": "Mexico",
@@ -696,21 +696,21 @@
    },
    "competition": "Women's International Friendly",
    "round": "2026 Women's International Friendly",
-   "venue": null,
-   "venue_city": null,
+   "venue": "Estadio Victoria",
+   "venue_city": "Aguascalientes, Mexico",
    "broadcast": null,
-   "seq": 1,
-   "fingerprint": "09f9e78d5dee3c3a",
-   "last_modified_utc": "2026-09-02T09:44:09Z"
+   "seq": 2,
+   "fingerprint": "ae38a5bbcc9a6f8e",
+   "last_modified_utc": "2026-09-11T14:30:44Z"
   },
   {
    "id": "espn-401916245",
    "source": "espn",
-   "date_utc": "2026-10-13T18:00Z",
-   "time_valid": false,
+   "date_utc": "2026-10-14T01:00Z",
+   "time_valid": true,
    "state": "pre",
    "status": "STATUS_SCHEDULED",
-   "status_detail": "TBD",
+   "status_detail": "10/13 - 9:00 PM EDT",
    "home": {
     "id": "2812",
     "name": "Mexico",
@@ -723,12 +723,12 @@
    },
    "competition": "Women's International Friendly",
    "round": "2026 Women's International Friendly",
-   "venue": null,
-   "venue_city": null,
+   "venue": "Estadio Corregidora",
+   "venue_city": "Santiago de Querétaro, Mexico",
    "broadcast": null,
-   "seq": 1,
-   "fingerprint": "e84d28f707915606",
-   "last_modified_utc": "2026-09-02T09:44:09Z"
+   "seq": 2,
+   "fingerprint": "b8d53b8ec1598c0e",
+   "last_modified_utc": "2026-09-11T14:30:44Z"
   },
   {
    "id": "espn-401870042",
