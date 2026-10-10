@@ -681,27 +681,27 @@
    "source": "espn",
    "date_utc": "2026-10-10T01:00Z",
    "time_valid": true,
-   "state": "pre",
-   "status": "STATUS_SCHEDULED",
-   "status_detail": "10/9 - 9:00 PM EDT",
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
    "home": {
     "id": "2812",
     "name": "Mexico",
-    "score": null
+    "score": "3"
    },
    "away": {
     "id": "2893",
     "name": "Jamaica",
-    "score": null
+    "score": "4"
    },
    "competition": "Women's International Friendly",
    "round": "2026 Women's International Friendly",
    "venue": "Estadio Victoria",
    "venue_city": "Aguascalientes, Mexico",
    "broadcast": null,
-   "seq": 2,
-   "fingerprint": "ae38a5bbcc9a6f8e",
-   "last_modified_utc": "2026-09-11T14:30:44Z"
+   "seq": 3,
+   "fingerprint": "97b3552f868480d3",
+   "last_modified_utc": "2026-10-10T08:40:44Z"
   },
   {
    "id": "espn-401916245",
