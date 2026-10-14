@@ -708,27 +708,27 @@
    "source": "espn",
    "date_utc": "2026-10-14T01:00Z",
    "time_valid": true,
-   "state": "pre",
-   "status": "STATUS_SCHEDULED",
-   "status_detail": "10/13 - 9:00 PM EDT",
+   "state": "post",
+   "status": "STATUS_FULL_TIME",
+   "status_detail": "FT",
    "home": {
     "id": "2812",
     "name": "Mexico",
-    "score": null
+    "score": "3"
    },
    "away": {
     "id": "2893",
     "name": "Jamaica",
-    "score": null
+    "score": "1"
    },
    "competition": "Women's International Friendly",
    "round": "2026 Women's International Friendly",
    "venue": "Estadio Corregidora",
    "venue_city": "Santiago de Querétaro, Mexico",
    "broadcast": null,
-   "seq": 2,
-   "fingerprint": "b8d53b8ec1598c0e",
-   "last_modified_utc": "2026-09-11T14:30:44Z"
+   "seq": 3,
+   "fingerprint": "64c7b4b2c8435dac",
+   "last_modified_utc": "2026-10-14T13:52:17Z"
   },
   {
    "id": "espn-401870042",
